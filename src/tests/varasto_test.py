@@ -58,7 +58,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto.saldo = 1
 
         self.varasto.lisaa_varastoon(10)
-        self.assertAlmostEqual(self.varasto.saldo, 10)
+        self.assertAlmostEqual(self.varasto.saldo, 100)
 
     def test_palauta_saldo(self):
         self.varasto.saldo = 5
